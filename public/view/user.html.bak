@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+
+ <style>
+	 body{
+		background-color: #00FFFF;
+	}
+
+	.title {
+		font-size: 96px;
+		font-weight: 100;
+		font-family: 'Lato';  
+		margin-top:150px;
+		color:#808080;
+	}
+
+	.container{
+		margin:0 auto;
+		width: 900px;
+		text-align: center;
+
+		}
+	</style>   
+
+   <div class="container">
+	 <div class="content">
+		<div class="title">WhatUsersDo</div>
+	 </div>
+	</div>

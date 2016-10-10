@@ -1,0 +1,16 @@
+<div class="col-sm-3 col-md-2 sidebar" >
+    <ul class="nav nav-sidebar">
+      
+        <li><a href="{{ url('/') }}"> @ {{ Auth::user()->name }}</a></li>
+        <li class="active"><a href="#">V_Tracker<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Edit Account</a></li>
+        <li><a href="{{ route('projects.index') }}">Projects</a></li>
+        <li><a href="{{ route('projects.create') }}">Create Project</a></li>
+        <li><a href="#">Todos</a></li>
+    </ul>
+    <ul class="nav nav-sidebar">
+        <li><a href="">Account</a></li>
+        <li><a href="">Help</a></li>
+        <li><a href="{{ route('auth.logout') }}">Sign Out</a></li>
+    </ul>
+</div>

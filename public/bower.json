@@ -1,0 +1,15 @@
+{
+  "name": "what_users_do",
+  "description": "tech est",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor/bower_dl",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+    "angular-route": "^1.5.8"
+  }
+}

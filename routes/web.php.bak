@@ -1,0 +1,19 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| This file is where you may define all of the routes that are handled
+| by your application. Just tell Laravel the URIs it should respond
+| to using a Closure or controller method. Build something great!
+|
+*/
+Route::get('/', 'mainController@index');
+
+Route::post('api/v1/user', ['as' => 'user_api', 'uses' => 'UserController@postUser']);
+Route::get('api/v1', ['as' => 'user.home', 'uses' => 'UserController@index']);
+
+
+

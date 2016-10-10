@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Keeper\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class RepositoryServiceProvider extends ServiceProvider
+{
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->bind(
+            'App\Keeper\Repositories\OrderLineRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\OrderLineRepository'
+        );
+
+  
+        $this->app->bind(
+            'App\Keeper\Repositories\PlaceOrderRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\PlaceOrderRepository'
+        );
+
+        $this->app->bind(
+            'App\Keeper\Repositories\PaymentRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\PaymentRepository'
+        );
+
+        $this->app->bind(
+            'App\Keeper\Repositories\OrderRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\OrderRepository'
+        );
+
+        $this->app->bind(
+            'App\Keeper\Repositories\AnimalTypeRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\AnimalTypeRepository'
+        );
+
+
+        $this->app->bind(
+            'App\Keeper\Repositories\AnimalFoodRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\AnimalRepository'
+        );
+
+        $this->app->bind(
+            'App\Keeper\Repositories\AnimalFoodTypeRepositoryInterface',
+            'App\Keeper\Repositories\Eloquent\AnimalFoodTypeRepository'
+        );
+    }
+}
